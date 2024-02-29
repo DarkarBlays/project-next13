@@ -1,5 +1,5 @@
 import { connectMongoDB } from "@/app/libs/mongodb";
-import User, { IUser, IUserSchema } from "@/models/User";
+import User, { IUserSchema } from "@/models/User";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken"
 import { isValidEmail } from "@/utils/isValidEmail";
