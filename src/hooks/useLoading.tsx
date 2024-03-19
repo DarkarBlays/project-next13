@@ -1,3 +1,4 @@
+import { Loader } from 'next/dynamic'
 import { useState } from 'react'
 
 interface LoaderState{
@@ -6,7 +7,7 @@ interface LoaderState{
     finishLoading: () => void
 }
 
-export function useLoading (){
+export function useLoading (): LoaderState{
     const [isLoading, setIsLoading] = useState(false)
 
     const startLoading = () => {

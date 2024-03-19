@@ -512,6 +512,9 @@ video {
 .flex{
   display: flex;
 }
+.grid{
+  display: grid;
+}
 .min-h-screen{
   min-height: 100vh;
 }

@@ -5,7 +5,7 @@ import { useContext } from 'react'
 
 interface AuthFetchProps{
     endpoint: string
-    redirectRoute: string
+    redirectRoute?: string
     formData: any
     options?: AxiosRequestConfig<any>
 }
@@ -28,8 +28,12 @@ export function useAuthFetch(){
             )
 
             /* Mostrar una notificacion */
-
-            if(redirectRoute) router.push(redirectRoute)
+            showNotification({
+                msj: data.message as string,
+                open: true,
+                status: 'succes'
+            })
+        if(redirectRoute) router.push(redirectRoute)
         }catch (error: any) {
             showNotification({
                 msj: error.responsive.data.message as string,
