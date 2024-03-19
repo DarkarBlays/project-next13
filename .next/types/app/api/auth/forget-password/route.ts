@@ -1,4 +1,4 @@
-// File: C:\Users\Administrator\Desktop\Cursos\React\project-next13\src\app\api\auth\forget-password\route.ts
+// File: C:\Users\Ana Martinez\Desktop\NOVENO SEMESTRE\ELECTIVA DE ÁGILES\project-next13\src\app\api\auth\forget-password\route.ts
 import * as entry from '../../../../../../src/app/api/auth/forget-password/route.js'
 import type { NextRequest } from 'next/server.js'
 
