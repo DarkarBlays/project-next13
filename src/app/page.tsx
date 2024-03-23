@@ -6,11 +6,11 @@ import { useLoading } from "@/hooks/useLoading";
 
 export default function LoginPage() {
   const {finishLoading, isLoading, startLoading} = useLoading()
-  const AuthFetch = useAuthFetch()
+  const authFetch = useAuthFetch()
 
   const login = async (formData: any) => {
     startLoading()
-    await AuthFetch({
+    await authFetch({
       endpoint: 'login',
       redirectRoute: '/home',
       formData

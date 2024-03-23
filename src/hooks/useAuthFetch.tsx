@@ -29,14 +29,14 @@ export function useAuthFetch(){
 
             /* Mostrar una notificacion */
             showNotification({
-                msj: data.message as string,
+                msj: data.message,
                 open: true,
-                status: 'succes'
+                status: 'success'
             })
         if(redirectRoute) router.push(redirectRoute)
         }catch (error: any) {
             showNotification({
-                msj: error.responsive.data.message as string,
+                msj: error.response.data.message as string,
                 open: true,
                 status: 'error'
             })

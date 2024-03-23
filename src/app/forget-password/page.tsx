@@ -4,13 +4,13 @@ import { Form } from "@/components/Form";
 import { useAuthFetch } from "@/hooks/useAuthFetch";
 import { useLoading } from "@/hooks/useLoading";
 
-export default function LoginPage() {
+export default function ForgetPassWordPage() {
   const {finishLoading, isLoading, startLoading} = useLoading()
-  const AuthFetch = useAuthFetch()
+  const authFetch = useAuthFetch()
 
   const forgetPassword = async (formData: any) => {
     startLoading()
-    await AuthFetch({
+    await authFetch({
       endpoint: 'forget-password',
       formData
     })
@@ -35,7 +35,7 @@ export default function LoginPage() {
           <Form.Footer
             description="Volver al inicio"
             link="/"
-            textLink="Inicio"
+            textLink="Inicia Sesión"
           />
       </Form>
     </>

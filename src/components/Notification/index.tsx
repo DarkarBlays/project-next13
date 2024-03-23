@@ -1,7 +1,6 @@
 import { StatusNotification } from '@/interface'
 import styles from './styles.module.scss'
 
-
 interface Props {
     status: StatusNotification
     msj: string | null

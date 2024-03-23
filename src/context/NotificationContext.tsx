@@ -43,9 +43,9 @@ export const NotificationProvider: React.FC<Props> = ({ children }) => {
     }
 
     return (
-        <NotificationContext.Provider value={{...notification, showNotification}}>
+        <NotificationContext.Provider value={{ ...notification, showNotification }}>
             {children}
-            {notification.open &&(
+            {notification.open && (
                 <>
                     <Notification status={notification.status} msj={notification.msj}/>
                 </>

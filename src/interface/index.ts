@@ -1,1 +1,1 @@
-export type StatusNotification = 'error' | 'succes' | null
+export type StatusNotification = "error" | "success" | null;

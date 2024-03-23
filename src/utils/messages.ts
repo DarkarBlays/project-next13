@@ -12,7 +12,7 @@ export const messages = {
     },
     success:{
         userCreated: "Usuario creado correctamente",
-        userLogged: "Vienvenido",
+        userLogged: "Bienvenido",
         emailSent: "Correo enviado correctamente",
         passwordChanged: "Contraseña cambiada correctamente",
         authorized: "Autorizado"
